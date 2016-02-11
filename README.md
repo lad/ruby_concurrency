@@ -1,6 +1,9 @@
 ruby_concurrency
 ================
 
+This repo contains example code that shows thread deadlock and thread starvation issues in Ruby.
+See thread-deadlock.rb and thread-starve.rb. The results from tests on different Ruby runtimes are shown below.
+
 MRI
 ---
 

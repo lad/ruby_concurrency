@@ -24,7 +24,7 @@ JRuby
 Rubinius
 --------
 
-|             |  RBX 2.4.1 |                    RBX 2.5.2                    |
-|:-----------:|:----------:|:-----------------------------------------------:|
-|  Deadlock  :| VM Crashes | Yes. Though most times we see thread starvation |
-| Starvation :| VM Crashes |                       Yes                       |
+|            |  RBX 2.4.1 |                    RBX 2.5.2                    |
+|:----------:|:----------:|:-----------------------------------------------:|
+|  Deadlock  | VM Crashes | Yes. Though most times we see thread starvation |
+| Starvation | VM Crashes |                       Yes                       |

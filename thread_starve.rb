@@ -79,8 +79,8 @@ class ThreadLogging
 end
 
 def main
-  logger = Logger.new(STDOUT)
   num_threads = ARGV[0] || 10
+  logger = Logger.new(STDOUT)
   logger.error("thread-deadlock: #{RUBY_VERSION}, #{num_threads} threads")
 
   tl = ThreadLogging.new(num_threads, logger)

@@ -24,7 +24,7 @@ class Worker
   end
 end
 
-class ThreadLogging
+class ThreadPool
   def initialize(num_threads, logger)
     @num_threads = num_threads.to_i
     @logger = logger
@@ -81,7 +81,7 @@ def main
   logger = Logger.new(STDOUT)
   logger.error("thread-deadlock: #{RUBY_VERSION}, #{num_threads} threads")
 
-  tl = ThreadLogging.new(num_threads, logger)
+  tl = ThreadPool.new(num_threads, logger)
   # Dump thread stacktraces on SIGUSR2
   Signal.trap(:USR2) { Thread.start { tl.dump_threads } }
 
